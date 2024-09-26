@@ -30,15 +30,21 @@ h1 {
     padding-top: 100px;
 }
 
+@media screen and (max-width: 425px) {
+    h1 {
+        letter-spacing: 10px;
+    }
+}
+
 .banner .list {
     position: absolute;
     bottom: 0;
     display: flex;
     width: 100%;
     height: fit-content;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: flex-end;
-    overflow: auto;
+    overflow-x: auto;
 }
 
 .banner .list .item img {
