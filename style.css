@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/medias/Vogue_Merry.jpeg);
+    background-size: cover;
+}
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(39, 37, 37, 0.493);
+}
+
+h1 {
+    width: 100%;
+    height: 200px;
+    color: #C1704B;
+    font-family: "Pirata One", system-ui;
+    font-size: 3rem;
+    letter-spacing: 20px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.banner .list {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: auto;
+}
+
+.banner .list .item img {
+    width: 260px;
+    filter: drop-shadow(30px 30px 30px #000);
+}
+
+.list:hover .item:not(:hover) {
+    filter: grayscale(1) blur(4px);
+}
